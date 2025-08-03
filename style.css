@@ -1,0 +1,412 @@
+body {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+  }
+.main{
+    display: flex;
+    height: 100vh;
+    margin-top: 0.5rem;
+}
+.sidebar{
+    width: 340px;
+    background-color: black;
+    margin-right: 0.5rem;
+}
+.main-content{
+    border-radius: 1rem; /*16px*/
+    flex: 1;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem; /*16px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0.5rem 0.7rem;
+    height: 100px;
+    padding:0.5rem 0.75rem ;
+}
+#cross{
+   align-self: flex-end;
+   opacity: 0.7;
+   display: none;
+}
+.nav-option{
+    line-height: 2.3rem;
+    opacity: 0.7;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+   
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.lib{
+    background-color: #121212;
+    border-radius: 1rem; /*16px*/
+    height: 100%;  
+    margin-top: 0.5rem;
+    padding:0.5rem 0.75rem ;
+
+}
+
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons i{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 ;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+    border: none;
+    width: fit-content;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 7rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+.badge:hover{
+    opacity: 0.3;
+}
+.sticky-nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-option {
+    margin-right: 1rem;
+}
+#buttons-option3{
+    background-color: black;
+    border-radius: 50%;
+    margin: 0rem 1rem 0 0.5rem;
+    padding: 0.6rem;
+    opacity: 0.8;
+}
+#buttons-option2{
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+.arrow i{
+    display: none;
+}
+.arrow img{
+    background-color: black;
+    border-radius: 50%;
+    margin: 1rem 1rem 0 0.5rem;
+    padding: 0.25rem;
+    opacity: 0.6;
+}
+@media(max-width:1000px) {
+    .hide{
+        display: none;
+    }
+}
+@media(max-width:685px){
+    #premium{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 1px 1px 4px #fff;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size:0.80rem;
+    opacity: 0.8;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height:50%;
+    border-top:1px solid white ;
+    opacity: 0.15;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    padding-left: 1rem;
+}
+.left img{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+.part{
+    margin-right: 0.6rem;
+}
+@media (max-width:845px){
+    .part{
+        display: none;
+    }
+}
+
+.part h5{
+    margin: 0;
+}
+.part p{
+    margin: 5px 0;
+    font-size: 0.6rem;
+    opacity: 0.6;
+
+}
+.hearticon{
+    display: flex;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.left-icon{
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.left-icon:hover{
+    opacity: 1;
+}
+.player-icon{
+    height: 0.8rem;
+    opacity: 0.7;
+}
+.player-icon:hover{
+    opacity: 1;
+}
+.center{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mute{
+    height:2rem ;
+    opacity: 1;
+}
+.player{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+.progress{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.progressbar{
+    width: 100%;
+    height: 0.3rem;
+    accent-color:#1bd760;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress span{
+    font-size: 0.7rem;
+    padding:0.2rem 1rem;
+}
+.right{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+.right i{
+    color: white;
+    margin: 0 0.5rem;
+}
+.volume{
+    accent-color:#1bd760;
+    height: 0.2rem;
+    width: 4rem;
+    border-radius: 100px;
+}
+#option{
+    background-color: black;
+    border-radius: 50%;
+    margin: 0rem 1rem 0 0.5rem;
+    padding: 0.6rem;
+    opacity: 0.8;
+}
+@media (max-width:700px) {
+    .right i{
+        display: none;
+    }
+    .right input{
+        display: none;
+    }
+    .right{
+        width:0px;
+    }
+    .center{
+        width: 75%;
+    }
+}
+@media (max-width:845px){
+    .sidebar{
+        width: 200px;
+    }
+    .icons{
+        display: none;
+    }
+    #smbadge{
+        height: 20px;
+        width: 120px;
+        font-size: 13px;
+        padding:2px;
+    }
+    .box{
+        height: 10rem;
+    }
+}
+
+@media(max-width:500px){
+    .sidebar{
+        display: none;
+        overflow: scroll;
+    }
+    #cross{
+        display: block;
+    }
+    #option{
+        display: block;
+    }
+    .hearticon{
+        display: none;
+    }
+    .left{
+        width: max-content;
+    }
+    .center{
+        width: 100%;
+        align-items: center;
+    }
+    .buttons{
+        justify-content: space-between;
+    }
+    .player{
+        justify-content:center;
+        /* margin-left: 1rem; */
+    }
+    .player-icon{
+        margin-left: 1rem;
+    }
+    .progress{
+        width: 100%;
+    }
+    #buttons-option3{
+        margin-right: 0;
+    }
+    .box{
+        height: 11rem;
+    }
+}
+@media(max-width:350px){
+    #mute{
+        height: 1.5rem;
+    }
+}
+
+.visible{
+    display: block;
+}
